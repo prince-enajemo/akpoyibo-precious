@@ -388,7 +388,7 @@ export default function Home() {
             <div className="max-w-xl">
               <p className="text-sm font-semibold text-[#e7b94c]">Connect</p>
               <h2 className="mt-3.5 font-serif text-3xl font-normal leading-[1.12] tracking-tight text-[#fdfbf6] sm:text-5xl">
-                Let’s connect and build something meaningful.
+                 connect and build something meaningful.
               </h2>
               <p className="mt-4.5 max-w-[50ch] text-base leading-relaxed text-[#a9b7cc]">
                 Reach out through any of the channels below and begin a conversation about
