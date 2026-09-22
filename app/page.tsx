@@ -92,7 +92,7 @@ const timeline = [
 const ventures = [
   {
     tag: "Media",
-    glow: "bg-[#e7b94c]",
+    glow: "bg-[#F5C418]",
     title: "Golden Media & Consulting",
     text: "Creative consulting and brand strategy for purpose-driven individuals and businesses seeking stronger visibility and trust.",
   },
@@ -112,16 +112,16 @@ const ventures = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#070d18] text-[#a9b7cc] selection:bg-[#e7b94c] selection:text-[#0e1c30]">
+    <div className="min-h-screen bg-[#070d18] text-[#a9b7cc] selection:bg-[#F5C418] selection:text-[#0e1c30]">
       {/* background texture */}
-      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(680px_520px_at_14%_8%,rgba(231,185,76,0.14),transparent_60%),radial-gradient(720px_620px_at_88%_28%,rgba(79,143,166,0.16),transparent_62%),linear-gradient(180deg,#070d18_0%,#0b1524_45%,#070d18_100%)]" />
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(680px_520px_at_14%_8%,rgba(245,196,24,0.14),transparent_60%),radial-gradient(720px_620px_at_88%_28%,rgba(79,143,166,0.16),transparent_62%),linear-gradient(180deg,#070d18_0%,#0b1524_45%,#070d18_100%)]" />
 
       {/* NAV */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#070d18]/60 backdrop-blur-xl backdrop-saturate-150">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <div className="flex flex-col leading-none">
             <span className="font-serif text-lg font-semibold text-white">Precious Y.A.</span>
-            <span className="mt-1 text-[0.65rem] tracking-[0.16em] text-[#f2d089]">AKPOYIBO</span>
+            <span className="mt-1 text-[0.65rem] tracking-[0.16em] text-[#F5C418]">AKPOYIBO</span>
           </div>
 
           <nav className="hidden items-center gap-8 text-sm text-[#a9b7cc] md:flex">
@@ -134,7 +134,7 @@ export default function Home() {
 
           <a
             href="#contact"
-            className="rounded-full border border-[#e7b94c]/50 bg-[#e7b94c]/10 px-5 py-2.5 text-sm font-medium text-[#f2d089] transition hover:bg-[#e7b94c] hover:text-[#0e1c30]"
+            className="rounded-full border border-[#F5C418]/50 bg-[#F5C418]/10 px-5 py-2.5 text-sm font-medium text-[#F5C418] transition hover:bg-[#F5C418] hover:text-[#0e1c30]"
           >
             Connect
           </a>
@@ -146,14 +146,14 @@ export default function Home() {
         <section className="px-6 py-24 lg:px-8 lg:py-28">
           <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.18fr_0.82fr]">
             <div>
-              <span className="inline-flex items-center gap-2 rounded-full border border-[#e7b94c]/35 bg-[#e7b94c]/[0.07] px-4 py-2 text-xs font-medium text-[#f2d089]">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#e7b94c] shadow-[0_0_10px_2px_rgba(231,185,76,0.6)]" />
+              <span className="inline-flex items-center gap-2 rounded-full border border-[#F5C418]/35 bg-[#F5C418]/[0.07] px-4 py-2 text-xs font-medium text-[#F5C418]">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#F5C418] shadow-[0_0_10px_2px_rgba(245,196,24,0.6)]" />
                 Engineer · Youth Leader · Media Strategist · Minister
               </span>
 
               <h1 className="mt-6 max-w-[15ch] font-serif text-4xl font-normal leading-[1.02] tracking-tight text-[#fdfbf6] sm:text-5xl lg:text-7xl">
                 Precious Yerindideke{" "}
-                <em className="font-normal not-italic text-[#f2d089] italic">Akpoyibo</em>
+                <em className="font-normal not-italic text-[#F5C418] italic">Akpoyibo</em>
               </h1>
 
               <p className="mt-6 max-w-[46ch] text-lg leading-relaxed text-[#a9b7cc]">
@@ -165,13 +165,13 @@ export default function Home() {
               <div className="mt-9 flex flex-wrap gap-3.5">
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-br from-[#f2d089] to-[#e7b94c] px-6 py-3.5 text-sm font-semibold text-[#14243c] shadow-[0_10px_30px_-8px_rgba(231,185,76,0.55)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_34px_-6px_rgba(231,185,76,0.6)]"
+                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-br from-[#F5C418] to-[#F5C418] px-6 py-3.5 text-sm font-semibold text-[#14243c] shadow-[0_10px_30px_-8px_rgba(245,196,24,0.55)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_34px_-6px_rgba(245,196,24,0.6)]"
                 >
                   Book a session
                 </a>
                 <a
                   href="#about"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3.5 text-sm font-semibold text-[#eef1f6] transition hover:border-[#e7b94c]/50 hover:text-[#f2d089]"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3.5 text-sm font-semibold text-[#eef1f6] transition hover:border-[#F5C418]/50 hover:text-[#F5C418]"
                 >
                   Explore profile
                 </a>
@@ -183,7 +183,7 @@ export default function Home() {
                     key={stat.label}
                     className="rounded-2xl border border-white/[0.11] bg-white/[0.055] p-4 backdrop-blur-md"
                   >
-                    <p className="font-serif text-xl font-semibold text-[#f2d089]">{stat.value}</p>
+                    <p className="font-serif text-xl font-semibold text-[#F5C418]">{stat.value}</p>
                     <p className="mt-1.5 text-[0.7rem] leading-snug text-[#7688a3]">{stat.label}</p>
                   </div>
                 ))}
@@ -192,13 +192,13 @@ export default function Home() {
 
             {/* glass profile card */}
             <div className="relative">
-              <div className="absolute -left-8 top-8 h-56 w-56 rounded-full bg-[#e7b94c]/20 blur-3xl" />
+              <div className="absolute -left-8 top-8 h-56 w-56 rounded-full bg-[#F5C418]/20 blur-3xl" />
               <div className="absolute -right-6 bottom-10 h-60 w-60 rounded-full bg-[#4f8fa6]/20 blur-3xl" />
 
               <div className="relative rounded-[28px] border border-white/[0.14] bg-gradient-to-br from-white/[0.09] to-white/[0.025] p-7 shadow-[0_30px_70px_-24px_rgba(0,0,0,0.6)] backdrop-blur-2xl backdrop-saturate-150">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3.5">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#f2d089] to-[#e7b94c] font-serif text-2xl font-semibold text-[#14243c]">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#F5C418] to-[#F5C418] font-serif text-2xl font-semibold text-[#14243c]">
                       P
                     </div>
                     <div>
@@ -206,7 +206,7 @@ export default function Home() {
                       <p className="mt-0.5 font-serif text-lg text-[#fdfbf6]">Precious A.</p>
                     </div>
                   </div>
-                  <span className="rounded-full border border-[#e7b94c]/35 bg-[#e7b94c]/[0.08] px-3 py-1.5 text-xs text-[#f2d089]">
+                  <span className="rounded-full border border-[#F5C418]/35 bg-[#F5C418]/[0.08] px-3 py-1.5 text-xs text-[#F5C418]">
                     Builder
                   </span>
                 </div>
@@ -224,7 +224,7 @@ export default function Home() {
                 </div>
 
                 <div className="mt-4 grid grid-cols-2 gap-3">
-                  <div className="rounded-2xl bg-gradient-to-br from-[#f2d089] to-[#e7b94c] p-4 text-[#14243c]">
+                  <div className="rounded-2xl bg-gradient-to-br from-[#F5C418] to-[#F5C418] p-4 text-[#14243c]">
                     <p className="text-[0.62rem] tracking-[0.09em] opacity-75">FOCUS</p>
                     <p className="mt-1.5 font-serif text-lg">Purpose</p>
                   </div>
@@ -242,7 +242,7 @@ export default function Home() {
         <section id="about" className="bg-[#f4f0e6] text-[#0e1c30]">
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <div className="max-w-3xl">
-              <p className="text-sm font-semibold text-[#e7b94c]">About</p>
+              <p className="text-sm font-semibold text-[#F5C418]">About</p>
               <h2 className="mt-3.5 max-w-[20ch] font-serif text-3xl font-normal leading-[1.12] tracking-tight sm:text-5xl">
                 A builder across engineering, leadership, media, and ministry.
               </h2>
@@ -268,7 +268,7 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <div className="grid gap-6 lg:grid-cols-[1fr_0.7fr] lg:items-end">
               <div>
-                <p className="text-sm font-semibold text-[#e7b94c]">Leadership profile</p>
+                <p className="text-sm font-semibold text-[#F5C418]">Leadership profile</p>
                 <h2 className="mt-3.5 font-serif text-3xl font-normal leading-[1.12] tracking-tight sm:text-5xl">
                   Turning influence into impact.
                 </h2>
@@ -284,9 +284,9 @@ export default function Home() {
               {initiatives.map((initiative) => (
                 <article
                   key={initiative.title}
-                  className="rounded-[24px] border border-white/[0.11] bg-white/[0.055] p-7 backdrop-blur-md transition hover:-translate-y-1 hover:border-[#e7b94c]/40"
+                  className="rounded-[24px] border border-white/[0.11] bg-white/[0.055] p-7 backdrop-blur-md transition hover:-translate-y-1 hover:border-[#F5C418]/40"
                 >
-                  <p className="text-[0.7rem] font-semibold tracking-[0.06em] text-[#f2d089]">
+                  <p className="text-[0.7rem] font-semibold tracking-[0.06em] text-[#F5C418]">
                     {initiative.meta}
                   </p>
                   <h3 className="mt-3.5 font-serif text-xl font-medium text-[#fdfbf6]">
@@ -306,7 +306,7 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <div className="grid gap-11 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
               <div>
-                <p className="text-sm font-semibold text-[#e7b94c]">Background</p>
+                <p className="text-sm font-semibold text-[#F5C418]">Background</p>
                 <h2 className="mt-3.5 font-serif text-3xl font-normal leading-[1.12] tracking-tight sm:text-5xl">
                   Education, experience, and growth.
                 </h2>
@@ -322,7 +322,7 @@ export default function Home() {
                       "Practical experience gained through structural and industrial internships.",
                     ].map((line) => (
                       <li key={line} className="relative pl-4 text-[0.96rem] leading-relaxed text-[#0e1c30]/78">
-                        <span className="absolute left-0 top-2.5 h-1.5 w-1.5 rounded-full bg-[#e7b94c]" />
+                        <span className="absolute left-0 top-2.5 h-1.5 w-1.5 rounded-full bg-[#F5C418]" />
                         {line}
                       </li>
                     ))}
@@ -331,11 +331,11 @@ export default function Home() {
               </div>
 
               <div className="relative pl-11">
-                <span className="absolute left-[17px] top-1.5 bottom-1.5 w-[1.5px] bg-gradient-to-b from-[#e7b94c] to-[#e7b94c]/15" />
+                <span className="absolute left-[17px] top-1.5 bottom-1.5 w-[1.5px] bg-gradient-to-b from-[#F5C418] to-[#F5C418]/15" />
                 <div className="space-y-6">
                   {timeline.map((item, index) => (
                     <div key={item} className="relative">
-                      <div className="absolute -left-[46px] top-0.5 flex h-8 w-8 items-center justify-center rounded-full border-[1.5px] border-[#e7b94c] bg-white font-serif text-sm font-semibold text-[#0e1c30]">
+                      <div className="absolute -left-[46px] top-0.5 flex h-8 w-8 items-center justify-center rounded-full border-[1.5px] border-[#F5C418] bg-white font-serif text-sm font-semibold text-[#0e1c30]">
                         {index + 1}
                       </div>
                       <div className="rounded-[18px] border border-[#0e1c30]/[0.08] bg-white p-5">
@@ -353,7 +353,7 @@ export default function Home() {
         <section id="ventures" className="bg-[#070d18]">
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <div className="mx-auto max-w-2xl">
-              <p className="text-sm font-semibold text-[#e7b94c]">Ventures & influence</p>
+              <p className="text-sm font-semibold text-[#F5C418]">Ventures & influence</p>
               <h2 className="mt-3.5 font-serif text-3xl font-normal leading-[1.12] tracking-tight sm:text-5xl">
                 Media, growth, and voice for purpose-driven impact.
               </h2>
@@ -366,7 +366,7 @@ export default function Home() {
                   className="relative overflow-hidden rounded-[24px] border border-white/[0.11] bg-white/[0.055] p-7 backdrop-blur-md"
                 >
                   <div className={`absolute -right-10 -top-10 h-28 w-28 rounded-full opacity-50 blur-2xl ${v.glow}`} />
-                  <p className="text-[0.7rem] font-semibold tracking-[0.08em] text-[#f2d089]">
+                  <p className="text-[0.7rem] font-semibold tracking-[0.08em] text-[#F5C418]">
                     {v.tag.toUpperCase()}
                   </p>
                   <h3 className="mt-3 font-serif text-xl font-medium text-[#fdfbf6]">{v.title}</h3>
@@ -386,7 +386,7 @@ export default function Home() {
 
           <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <div className="max-w-xl">
-              <p className="text-sm font-semibold text-[#e7b94c]">Connect</p>
+              <p className="text-sm font-semibold text-[#F5C418]">Connect</p>
               <h2 className="mt-3.5 font-serif text-3xl font-normal leading-[1.12] tracking-tight text-[#fdfbf6] sm:text-5xl">
                  connect and build something meaningful.
               </h2>
@@ -400,7 +400,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => window.open("https://wa.me/2348103469166", "_blank", "noopener,noreferrer")}
-                className="group inline-flex items-center gap-2.5 rounded-full border border-[#e7b94c]/35 bg-[#e7b94c]/10 px-4 py-2.5 text-sm font-medium text-[#f2d089] transition hover:bg-[#e7b94c] hover:text-[#0e1c30]"
+                className="group inline-flex items-center gap-2.5 rounded-full border border-[#F5C418]/35 bg-[#F5C418]/10 px-4 py-2.5 text-sm font-medium text-[#F5C418] transition hover:bg-[#F5C418] hover:text-[#0e1c30]"
               >
                 <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#0e1c30]/50">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
@@ -414,7 +414,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => (window.location.href = "mailto:preciousakpoyibo@gmail.com")}
-                className="group inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.04] px-4 py-2.5 text-sm font-medium text-[#eef1f6] transition hover:border-[#e7b94c]/40 hover:text-[#f2d089]"
+                className="group inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.04] px-4 py-2.5 text-sm font-medium text-[#eef1f6] transition hover:border-[#F5C418]/40 hover:text-[#F5C418]"
               >
                 <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#0e1c30]/50">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
@@ -427,7 +427,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => (window.location.href = "tel:+2348103469166")}
-                className="group inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.04] px-4 py-2.5 text-sm font-medium text-[#eef1f6] transition hover:border-[#e7b94c]/40 hover:text-[#f2d089]"
+                className="group inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.04] px-4 py-2.5 text-sm font-medium text-[#eef1f6] transition hover:border-[#F5C418]/40 hover:text-[#F5C418]"
               >
                 <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#0e1c30]/50">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
