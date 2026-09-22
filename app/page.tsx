@@ -399,7 +399,7 @@ export default function Home() {
             <div className="mt-12 flex flex-wrap gap-3">
               <button
                 type="button"
-                onClick={() => window.open("https://wa.me/248103469166", "_blank", "noopener,noreferrer")}
+                onClick={() => window.open("https://wa.me/2348103469166", "_blank", "noopener,noreferrer")}
                 className="group inline-flex items-center gap-2.5 rounded-full border border-[#e7b94c]/35 bg-[#e7b94c]/10 px-4 py-2.5 text-sm font-medium text-[#f2d089] transition hover:bg-[#e7b94c] hover:text-[#0e1c30]"
               >
                 <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#0e1c30]/50">
@@ -426,7 +426,7 @@ export default function Home() {
 
               <button
                 type="button"
-                onClick={() => (window.location.href = "tel:+248103469166")}
+                onClick={() => (window.location.href = "tel:+2348103469166")}
                 className="group inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.04] px-4 py-2.5 text-sm font-medium text-[#eef1f6] transition hover:border-[#e7b94c]/40 hover:text-[#f2d089]"
               >
                 <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#0e1c30]/50">
