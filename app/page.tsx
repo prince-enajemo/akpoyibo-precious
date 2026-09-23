@@ -1116,7 +1116,7 @@ export default function Home() {
                   Work With Me
                 </MagneticButton>
                 <MagneticButton
-                  href="https://wa.me/2348103469166"
+                  href="https://wa.me/2349051953818"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-full border border-white/15 px-6 py-3 text-sm text-white hover:border-[#C9A24A]/60 hover:text-[#C9A24A]"
