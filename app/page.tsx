@@ -1110,7 +1110,7 @@ export default function Home() {
 
               <div className="mt-10 flex flex-wrap gap-4">
                 <MagneticButton
-                  href="mailto:preciousakpoyibo@gmail.com"
+                  href="mailto:Preciousyerindideke@gmail.com"
                   className="rounded-full bg-[#C9A24A] px-6 py-3 text-sm font-medium text-[#0A0D12] hover:bg-[#D9B461]"
                 >
                   Work With Me
@@ -1131,14 +1131,14 @@ export default function Home() {
               <p className="text-sm text-[#8FA3B8] lg:text-right">Connect With Me</p>
               <div className="flex items-center gap-4">
                 <a
-                  href="mailto:preciousakpoyibo@gmail.com"
+                  href="mailto:Preciousyerindideke@gmail.com"
                   aria-label="Email Precious Akpoyibo"
                   className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-[#B9C4D4] transition-colors duration-300 hover:border-[#C9A24A]/60 hover:text-[#C9A24A]"
                 >
                   <Mail className="h-5 w-5" strokeWidth={1.75} />
                 </a>
                 <a
-                  href="https://wa.me/2348103469166"
+                  href="https://wa.me/2349051953818"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Message on WhatsApp"
