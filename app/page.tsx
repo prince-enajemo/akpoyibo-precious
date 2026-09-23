@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Fraunces, Inter } from "next/font/google";
+import { Mail } from "lucide-react";
 import {
   useEffect,
   useRef,
@@ -76,6 +77,10 @@ const ventures = [
   {
     title: "Founder, LeadRight Africa",
     description: "Leadership development, capacity building, and youth empowerment.",
+  },
+  {
+    title: "SpiritBreed Network",
+    description: "Mentorship and faith development platform focused on building balanced individuals.",
   },
   {
     title: "Founder, Golden Media & Consulting",
@@ -509,6 +514,19 @@ export default function Home() {
 
       {/* ---------------------------------------------------------------- 1. Home / Hero */}
       <section id="home" className="relative overflow-hidden px-6 pb-24 pt-40 lg:px-10 lg:pt-48">
+        {/* Mobile-only full-bleed portrait behind the hero text */}
+        <div aria-hidden className="absolute inset-0 lg:hidden">
+          <Image
+            src="/images/person headshot images/IMG_0047.PNG"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-top"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0A0D12]/25 via-[#0A0D12]/70 to-[#0A0D12]" />
+        </div>
+
         <div
           aria-hidden
           className="pointer-events-none absolute -left-24 top-24 h-80 w-80 rounded-full bg-[#C9A24A]/10 blur-[110px]"
@@ -518,7 +536,7 @@ export default function Home() {
           className="pointer-events-none absolute -right-16 bottom-0 h-96 w-96 rounded-full bg-[#2F5D57]/25 blur-[130px]"
         />
 
-        <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+        <div className="relative mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
           <div>
             <h1 className="font-display text-5xl font-light leading-[1.03] tracking-tight text-white sm:text-6xl lg:text-[4.6rem]">
               <span className="block overflow-hidden pb-1">
@@ -580,7 +598,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={`relative ${heroMounted ? "scale-in" : "opacity-0"}`} style={{ animationDelay: "0.3s" }}>
+          <div className={`relative hidden lg:block ${heroMounted ? "scale-in" : "opacity-0"}`} style={{ animationDelay: "0.3s" }}>
             <div className="overflow-hidden rounded-[2px] border border-white/10 bg-[#10151A] shadow-[0_40px_80px_-40px_rgba(0,0,0,0.6)]">
               <div className="aspect-[4/5] w-full">
                 <Image
@@ -600,6 +618,25 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className={`mt-4 block px-6 lg:hidden ${heroMounted ? "scale-in" : "opacity-0"}`} style={{ animationDelay: "0.3s" }}>
+        <div className="relative mx-auto max-w-[22rem] p-3">
+          <div className="absolute inset-0 rounded-[2px] border border-[#C9A24A]/30" />
+          <div className="absolute inset-3 rounded-[2px] border border-white/15" />
+          <div className="relative overflow-hidden border border-white/10 bg-[#10151A] shadow-[0_30px_50px_-30px_rgba(0,0,0,0.8)]">
+            <div className="aspect-[4/5] w-full">
+              <Image
+                src="/images/person headshot images/IMG_2457.JPG.jpeg"
+                alt="Precious Akpoyibo portrait"
+                width={900}
+                height={1100}
+                priority
+                className="h-full w-full object-cover object-center grayscale-[10%] transition-transform duration-700 hover:scale-[1.02]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* ---------------------------------------------------------------- 2. About */}
       <section id="about" className="bg-[#EEF2F1] px-6 py-28 text-[#10151A] lg:px-10 lg:py-32">
@@ -910,7 +947,7 @@ export default function Home() {
               <ul className="list-disc space-y-2 pl-5">
                 <li>Why leadership has no age limit</li>
                 <li>How to put Purpose before Desire</li>
-                <li>Building the “I CAN” mindset</li>
+                <li>Building the "I CAN" mindset</li>
                 <li>The power of Sincerity as real leadership strength</li>
                 <li>Growing in Quiet Time, Discipline, and Character</li>
                 <li>Leading while still learning, handling failure, and building legacy</li>
@@ -1058,19 +1095,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------------------------------------------------------------- 9. Awards & Recognition */}
-      {/* <section id="awards" className="bg-[#0A0D12] px-6 py-28 lg:px-10 lg:py-32">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-[14ch] font-display text-4xl font-light leading-tight tracking-tight text-white sm:text-5xl">
-            Recognition
-          </h2>
-          <p className="mt-6 max-w-[52ch] text-base leading-relaxed text-[#8FA3B8]">
-            Selected awards, honours, appointments, certificates, and professional recognition.
-          </p>
-          {/* Populate with individual award items — image + title — once assets are supplied. 
-        </div>
-      </section> */}
-
       {/* ---------------------------------------------------------------- 10. Contact */}
       <section id="contact" className="bg-[#12161F] px-6 py-28 lg:px-10 lg:py-32">
         <div className="mx-auto max-w-7xl">
@@ -1102,59 +1126,63 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="space-y-5 border-t border-white/10 pt-8 text-sm text-[#B9C4D4] lg:border-t-0 lg:border-l lg:pl-12 lg:pt-0">
-              <p className="text-sm text-[#8FA3B8]">Connect With Me</p>
-              <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                <span className="text-[#8FA3B8]">Email</span>
+            {/* Connect With Me — icon-only row. No text/handles shown; each icon links out on click. */}
+            <div className="flex flex-col items-start gap-6 border-t border-white/10 pt-8 lg:items-end lg:border-t-0 lg:border-l lg:pl-12 lg:pt-0">
+              <p className="text-sm text-[#8FA3B8] lg:text-right">Connect With Me</p>
+              <div className="flex items-center gap-4">
                 <a
                   href="mailto:preciousakpoyibo@gmail.com"
-                  className="text-white underline-offset-4 transition-colors hover:text-[#C9A24A] hover:underline"
+                  aria-label="Email Precious Akpoyibo"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-[#B9C4D4] transition-colors duration-300 hover:border-[#C9A24A]/60 hover:text-[#C9A24A]"
                 >
-                  preciousakpoyibo@gmail.com
+                  <Mail className="h-5 w-5" strokeWidth={1.75} />
                 </a>
-              </div>
-              <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                <span className="text-[#8FA3B8]">WhatsApp</span>
                 <a
                   href="https://wa.me/2348103469166"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-white underline-offset-4 transition-colors hover:text-[#C9A24A] hover:underline"
+                  aria-label="Message on WhatsApp"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-[#B9C4D4] transition-colors duration-300 hover:border-[#C9A24A]/60 hover:text-[#C9A24A]"
                 >
-                  +234 810 346 9166
+                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                    <path d="M12.004 2.003c-5.514 0-9.997 4.483-9.997 9.997 0 1.762.462 3.485 1.34 5.003L2 22l5.116-1.341a9.96 9.96 0 0 0 4.888 1.245h.004c5.514 0 9.997-4.483 9.997-9.997 0-2.671-1.04-5.182-2.929-7.07a9.933 9.933 0 0 0-7.072-2.834zm5.842 15.84a8.29 8.29 0 0 1-5.842 2.417h-.003a8.276 8.276 0 0 1-4.222-1.156l-.303-.18-3.037.797.81-2.96-.198-.304a8.267 8.267 0 0 1-1.267-4.417c0-4.573 3.722-8.294 8.298-8.294a8.24 8.24 0 0 1 5.868 2.432 8.234 8.234 0 0 1 2.428 5.866 8.284 8.284 0 0 1-2.532 5.799z" />
+                  </svg>
                 </a>
-              </div>
-              <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                <span className="text-[#8FA3B8]">LinkedIn</span>
                 <a
                   href="https://ng.linkedin.com/in/precious-akpoyibo-481697341"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-white underline-offset-4 transition-colors hover:text-[#C9A24A] hover:underline"
+                  aria-label="LinkedIn profile"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-[#B9C4D4] transition-colors duration-300 hover:border-[#C9A24A]/60 hover:text-[#C9A24A]"
                 >
-                  Precious Akpoyibo
+                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.048c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
                 </a>
-              </div>
-              <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                <span className="text-[#8FA3B8]">Instagram</span>
                 <a
                   href="https://www.instagram.com/precious_akpoyibo"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-white underline-offset-4 transition-colors hover:text-[#C9A24A] hover:underline"
+                  aria-label="Instagram profile"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-[#B9C4D4] transition-colors duration-300 hover:border-[#C9A24A]/60 hover:text-[#C9A24A]"
                 >
-                  @precious_akpoyibo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} className="h-5 w-5">
+                    <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
                 </a>
-              </div>
-              <div className="flex items-center justify-between pb-1">
-                <span className="text-[#8FA3B8]">YouTube</span>
                 <a
                   href="https://www.youtube.com/@PreciousAkpoyibo"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-white underline-offset-4 transition-colors hover:text-[#C9A24A] hover:underline"
+                  aria-label="YouTube channel"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-[#B9C4D4] transition-colors duration-300 hover:border-[#C9A24A]/60 hover:text-[#C9A24A]"
                 >
-                  @PreciousAkpoyibo
+                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                  </svg>
                 </a>
               </div>
             </div>
