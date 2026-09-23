@@ -135,7 +135,7 @@ const eventHighlights = [
   {
     src: "/images/events held/WhatsApp Image 2026-09-22 at 2.39.35 PM.jpeg",
     alt: "Event moment and audience engagement",
-    title: "Book Launch",
+    title: "leadership Revolution",
     description: "A moment of purpose, inspiration, and reflection as the message behind the book was shared with a wider audience.",
   },
   {
@@ -147,8 +147,26 @@ const eventHighlights = [
   {
     src: "/images/events held/WhatsApp Image 2026-09-22 at 2.39.36 PM (1).jpeg",
     alt: "Programme execution and event planning",
-    title: "LeadLight Africa",
+    title: "LeadRight Africa",
     description: "A leadership-driven initiative focused on vision, youth development, and practical empowerment for the next generation.",
+  },
+  {
+    src: "/images/events held/WhatsApp Image 2026-09-23 at 1.15.07 PM.jpeg",
+    alt: "I CAN BOOK LAUNCH",
+    title: "I CAN BOOK LAUNCH",
+    description: "A launch event for the I CAN book, a resource aimed at inspiring and equipping young people to embrace their potential and pursue their goals with confidence.",
+  },
+  {
+    src: "/images/events held/WhatsApp Image 2026-09-23 at 1.13.26 PM.jpeg",
+    alt: "spirit breed network",
+    title: "Spirit Breed Network Online Seminar",
+    description: "A  event for the Spirit Breed Network, focused on mentorship, faith, and balanced personal growth.",
+  },
+  {
+    src:"/images/events held/WhatsApp Image 2026-09-23 at 1.13.25 PM.jpeg",
+    alt: "spirit breed network",
+    title: "The Power Of Vision",
+    description: "An event focused on the importance of vision, goal-setting, and strategic planning for personal and professional growth.",
   },
 ];
 
@@ -1069,25 +1087,24 @@ export default function Home() {
             Moments &amp; Milestones
           </h2>
 
-          <div className="mt-12 grid auto-rows-[140px] grid-cols-2 gap-3 sm:auto-rows-[180px] lg:grid-cols-4">
+          <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
             {galleryImages.map((image, index) => (
               <div
                 key={`${image.alt}-${index}`}
-                className={`group relative overflow-hidden rounded-[2px] bg-[#DDE5E3] ${
-                  image.size === "tall" ? "row-span-2" : image.size === "wide" ? "col-span-2" : ""
-                }`}
+                className="group relative overflow-hidden rounded-[12px] border border-[#10151A]/10 bg-[#DDE5E3] shadow-[0_18px_40px_rgba(16,21,26,0.12)]"
               >
-                <div className="relative h-full w-full">
+                <div className="relative aspect-[4/5] h-full w-full overflow-hidden">
                   <Image
                     src={image.src}
                     alt={image.alt}
                     fill
-                    sizes="(max-width: 1024px) 50vw, 25vw"
-                    className="h-full w-full object-contain object-center p-2 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
+                    sizes="(max-width: 640px) 50vw, 25vw"
+                    className="h-full w-full object-cover object-center transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
                   />
                 </div>
+                <div className="absolute inset-0 border border-[#C9A24A]/40" />
                 <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-black/0 to-black/0 p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <p className="text-xs leading-snug text-white">{image.alt}</p>
+                  <p className="text-[10px] leading-snug text-white">{image.alt}</p>
                 </div>
               </div>
             ))}
