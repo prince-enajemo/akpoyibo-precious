@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   title: "Precious Yerindideke Akpoyibo | Builder, Leader, Engineer",
   description:
     "Professional profile of Precious Yerindideke Akpoyibo: civil engineer, youth leader, media strategist, and public minister based in Bayelsa State, Nigeria.",
+  icons: {
+    icon: "/images/person%20headshot%20images/IMG_0047.PNG",
+    shortcut: "/images/person%20headshot%20images/IMG_0047.PNG",
+    apple: "/images/person%20headshot%20images/IMG_0047.PNG",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
